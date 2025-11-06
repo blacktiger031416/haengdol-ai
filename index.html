@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>행돌 AI (v0.1)</title>
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<main class="app">
+<header class="topbar">
+<h1>행돌 AI</h1>
+<span class="tag">v0.1 • local rules</span>
+</header>
+
+<section id="chat" class="chat" aria-live="polite" aria-label="Chat transcript"></section>
+
+<form id="composer" class="composer" autocomplete="off">
+<input id="message" name="message" type="text" placeholder="행돌에게 말 걸기... (예: 감도 추천)" required />
+<button id="send" type="submit" aria-label="Send">보내기</button>
+</form>
+</main>
+
+<footer class="footer">
+<p>⚠️ v0.1은 규칙 기반 데모입니다. 이후 v0.2에서 LLM 연동 예정.</p>
+</footer>
+
+<script src="./main.js"></script>
+</body>
+</html>
